@@ -17,7 +17,7 @@
                 android:text="first_name" />
 
             <EditText
-                android:id="@+id/editText1"
+                android:id="@+id/edtFirst"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10" >
@@ -36,7 +36,7 @@
                 android:text="family_name" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/edtFamily"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10" />
@@ -50,6 +50,7 @@
         android:layout_height="wrap_content" >
 
 		<Button
+		    android:id="@+id/btnOK"
 		    android:layout_width="160px"
 		    android:layout_height="wrap_content"
 		    android:text="OK" />
@@ -60,5 +61,19 @@
             android:text="Cancel" />
 
     </LinearLayout>
+
+	<GridLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:columnCount="1" >
+
+	    <TextView
+	        android:id="@+id/txvMsg"
+	        android:layout_column="0"
+	        android:layout_gravity="left|top"
+	        android:layout_row="0"
+	        android:text="Large Text"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	</GridLayout>
 
 </LinearLayout>
